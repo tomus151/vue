@@ -1,35 +1,57 @@
-<template>
-    <nav class="nav">
-        <ul>
-            <li v-for="element in navList">
-                <router-link to='/a'>
-                    <button>{{element}}</button>
-                </router-link>
-
-            </li>
-
-            <li v-for="route in this.$router.options.routes">
-                <router-link :to="route.path">{{route.name}}</router-link>
-            </li>
-            <router-link to="/">
-                <button>zmień</button>
-            </router-link>
-        </ul>
+<template lang="html">
+    <nav>
+        <div>
+            <div class="logo-container">
+                <img src="@/assets/menu/LOGO.png" alt="logo-icon">
+            </div>
+            <div class="home-container">
+                <img src="@/assets/menu/Home.png" alt="home-icon">
+            </div>
+            <div class="cart-container">
+                <img src="@/assets/menu/Basket.png" alt="cart-icon">
+            </div>
+            <div class="search-container">
+                <img src="@/assets/menu/Search.png" alt="search-icon">
+            </div>
+        </div>
+        <div class="download-container">
+            <img src="@/assets/menu/In.png" alt="download-icon">
+        </div>
     </nav>
 </template>
+
 <script>
-// const navigations = ['Home','Blog','Products','Learn','Team'];
-export default{
-    name: 'Nav',
-    data() {
-        return{
-            navList: ['home','account','products']
-        }
-    }
+export default {
+    name:"Nav"
 }
 </script>
-<style scoped>
-    li{
-        list-style: none;
+
+<style lang="scss">
+nav{
+    width: 7vW;
+    height: 100vh;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    *{
+        background:#fff;
     }
+    div{
+        &:first-child{
+            margin-top:10px;
+        }
+        margin-top:30px;
+        div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+    div:nth-last-child(1){
+        margin-bottom::70px;
+    }
+}
 </style>

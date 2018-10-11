@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Obrazek from '@/components/Obrazek'
-import Divs from '@/components/Divs'
+import Home from '@/components/Home'
 
 Vue.use(Router)
 
@@ -12,17 +10,7 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: HelloWorld
+      component: Home
     },
-    {
-        path: '/products',
-        name: 'Products',
-        component: Obrazek
-    },
-    {
-        path: '/accounts',
-        name: 'Konto',
-        component: Divs
-    }
   ]
 })
