@@ -41,17 +41,18 @@ nav{
     div{
         &:first-child{
             margin-top:10px;
+            margin-bottom:100px;
         }
-        margin-top:30px;
+        &:nth-last-child(1){
+            margin-bottom::70px;
+        }
+        margin-top:50px;
         div{
             display:flex;
             justify-content: center;
             align-items: center;
         }
 
-    }
-    div:nth-last-child(1){
-        margin-bottom::70px;
     }
 }
 </style>
