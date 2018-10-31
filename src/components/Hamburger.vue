@@ -1,10 +1,6 @@
 <template>
-<div class="hamburger-menu">
-    <div class="hamburger-menu-container">
-        <div class="hamburger-menu-wrapper">
-            <img src="@/assets/hamburger-menu/hamburger.png" alt="hamburger-image">
-        </div>
-    </div>
+<div class="hamburger-menu" :class="isOpen">
+
     <div class="hamburger-menu-categories-wrapper">
         <ul>
             <li class="menu-hamburger-elements-wrapper">
@@ -36,35 +32,23 @@
 </template>
 <script>
 export default{
-    name: 'Hamburger'
+    name: 'Hamburger',
+    props:['isOpen']
 }
 </script>
 <style lang="scss" >
 .hamburger-menu{
+    position:absolute;
+    top:0;
+    right:0px;
+    height:100vh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    .hamburger-menu-container{
-        display:flex;
-        justify-content: flex-end;
-        .hamburger-menu-wrapper{
-            width:50px;
-            height:50px;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            margin-top:40px;
-            margin-right:40px;
-            box-shadow: 0 0 5px 3px #c1c1c1;
-            img{
-                background:transparent;
-                -webkit-filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
-                filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
-            }
-        }
-    }
+    background: #fff;
+    transform: translateX(100%);
     .hamburger-menu-categories-wrapper{
+        margin-top:100%;
         ul{
             display:flex;
             flex-direction: column;

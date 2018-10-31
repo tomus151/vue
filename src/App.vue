@@ -3,19 +3,41 @@
     <div id="app">
         <Nav/>
         <router-view/>
-        <Hamburger/>
+        <Hamburger :isOpen="open"/>
+        <div class="hamburger-menu-container">
+            <div @click="hideShowMenu" class="hamburger-menu-wrapper">
+                <img src="@/assets/hamburger-menu/hamburger.png" alt="hamburger-image">
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 import Nav from '@/components/Nav'
 import Hamburger from '@/components/Hamburger'
+let isHamburgerOpen = true
 export default {
     name: 'App',
+    data(){
+        return{
+            open: ''
+        }
+    },
     components:{
         Nav,
         Hamburger
+    },
+    methods:{
+        hideShowMenu: function(){
+            if(this.open == 'open'){
+                this.open = ''
+            }else{
+                this.open = 'open'
+            }
+
+        }
     }
+
 }
 </script>
 
@@ -28,6 +50,32 @@ export default {
 #app{
     display:flex;
     justify-content: space-between;
+    overflow:hidden;
+    overflow-x: hidden;
+    height:100vh;
+    .hamburger-menu-container{
+        display:flex;
+        justify-content: flex-end;
+        position:absolute;
+        top:30px;
+        right:0px;
+        .hamburger-menu-wrapper{
+            width:50px;
+            height:50px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-top:40px;
+            margin-right:40px;
+            box-shadow: 0 0 5px 3px #c1c1c1;
+            img{
+                background:transparent;
+                -webkit-filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
+                filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
+            }
+        }
+    }
 }
 
 </style>
