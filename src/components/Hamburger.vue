@@ -5,23 +5,23 @@
         <ul>
             <li class="menu-hamburger-elements-wrapper">
                 <span>Living Room</span>
-                <img src="@/assets/hamburger-menu/list/ICON.png" alt="">
+                <img src="@/assets/hamburger-menu/list/icon.png" alt="">
             </li>
             <li class="menu-hamburger-elements-wrapper">
                 <span>Office</span>
-                <img src="@/assets/hamburger-menu/list/ICON-001.png" alt="">
+                <img src="../assets/hamburger-menu/list/icon-001.png" alt="">
             </li>
             <li class="menu-hamburger-elements-wrapper">
                 <span>For Kids</span>
-                <img src="@/assets/hamburger-menu/list/ICON-002.png" alt="">
+                <img src="../assets/hamburger-menu/list/icon-002.png" alt="">
             </li>
             <li class="menu-hamburger-elements-wrapper">
                 <span>Kitchen</span>
-                <img src="@/assets/hamburger-menu/list/ICON-003.png" alt="">
+                <img src="../assets/hamburger-menu/list/icon-003.png" alt="">
             </li>
             <li class="menu-hamburger-elements-wrapper">
                 <span>Accesories</span>
-                <img src="@/assets/hamburger-menu/list/ICON-004.png" alt="">
+                <img src="../assets/hamburger-menu/list/icon-004.png" alt="">
             </li>
         </ul>
     </div>

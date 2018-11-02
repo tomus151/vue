@@ -2,20 +2,20 @@
     <nav>
         <div>
             <div class="logo-container">
-                <img src="@/assets/menu/LOGO.png" alt="logo-icon">
+                <img src="@/assets/menu/logo.png" alt="logo-icon">
             </div>
             <div class="home-container">
-                <img src="@/assets/menu/Home.png" alt="home-icon">
+                <img src="@/assets/menu/home.png" alt="home-icon">
             </div>
             <div class="cart-container">
-                <img src="@/assets/menu/Basket.png" alt="cart-icon">
+                <img src="@/assets/menu/basket.png" alt="cart-icon">
             </div>
             <div class="search-container">
-                <img src="@/assets/menu/Search.png" alt="search-icon">
+                <img src="@/assets/menu/search.png" alt="search-icon">
             </div>
         </div>
         <div class="download-container">
-            <img src="@/assets/menu/In.png" alt="download-icon">
+            <img src="@/assets/menu/in.png" alt="download-icon">
         </div>
     </nav>
 </template>
