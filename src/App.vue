@@ -2,7 +2,9 @@
 <template>
     <div id="app">
         <Nav/>
+        <transition name="router-anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
         <router-view/>
+        </transition>
         <Hamburger :isOpen="open"/>
         <div class="hamburger-menu-container">
             <div @click="hideShowMenu" class="hamburger-menu-wrapper">
@@ -42,6 +44,10 @@ export default {
 </script>
 
 <style lang="scss">
+.page{
+    position:fixed !important;
+}
+@import "css/animate.css";
 body{
     overflow:hidden;
 }
@@ -79,5 +85,7 @@ body{
         }
     }
 }
-
+a:-webkit-any-link {
+    text-decoration: none;
+}
 </style>

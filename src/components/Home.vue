@@ -1,5 +1,5 @@
 <template>
-    <div class="home-view-container">
+    <div class="home-view-container page">
         <span class="home-olios-span">OLIOS</span>
         <span class="home-long-text-span">NEWEST FURNITURE SHOP TEMPLATE</span>
         <span class="home-newest-span">NEWEST</span>
@@ -14,7 +14,8 @@ export default {
 
 <style lang="scss">
 .home-view-container{
-    width:100%;
+    width:93vw;
+    margin-left:7vw;
     height:100%;
     background: url('../assets/home/home.png');
     background-position:top left;

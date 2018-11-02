@@ -85,8 +85,7 @@ export default{
             }
         }
     }
-
-        .router-link-exact-active.hamburger-menu-bottom-span{
+.hamburger-menu-bottom-span{
             margin-bottom: 40px;
             display:flex;
             justify-content: center;
