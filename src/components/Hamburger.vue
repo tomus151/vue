@@ -25,9 +25,11 @@
             </li>
         </ul>
     </div>
-    <div class="hamburger-menu-bottom-span">
-        <span class="show-all-span">show all categories</span>
-    </div>
+    <router-link :to="{ name: 'Categories', params: {} }">
+        <div class="hamburger-menu-bottom-span">
+            <span class="show-all-span">show all categories</span>
+        </div>
+    </router-link>
 </div>
 </template>
 <script>
@@ -47,6 +49,8 @@ export default{
     justify-content: space-between;
     background: #fff;
     transform: translateX(100%);
+    transition: all 0.5s;
+    z-index:1;
     .hamburger-menu-categories-wrapper{
         margin-top:100%;
         ul{
@@ -81,26 +85,37 @@ export default{
             }
         }
     }
-    .hamburger-menu-bottom-span{
-        margin-bottom: 40px;
-        display:flex;
-        justify-content: center;
-        .show-all-span{
-            color:#c1c1c1;
-            padding: 0px 10px 5px 10px;
-            position:relative;
-            &:before{
-                content:"";
-                width:70%;
-                height:1px;
-                background:#c1c1c1;
-                position:absolute;
-                bottom:0px;
-                left:25px;
-                right:0px;
+
+        .router-link-exact-active.hamburger-menu-bottom-span{
+            margin-bottom: 40px;
+            display:flex;
+            justify-content: center;
+            .show-all-span{
+                color:#c1c1c1;
+                padding: 0px 10px 5px 10px;
+                position:relative;
+                text-decoration: none;
+                &:before{
+                    content:"";
+                    width:70%;
+                    height:1px;
+                    background:#c1c1c1;
+                    position:absolute;
+                    bottom:0px;
+                    left:25px;
+                    right:0px;
+                }
+                &:hover{
+                    color: #484848;
+                    &:before{
+                        background:#484848;
+                    }
+                }
             }
         }
-    }
+        &.open{
+            transform: translateX(0px);
+        }
 }
 
 </style>

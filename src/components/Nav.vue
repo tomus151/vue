@@ -1,12 +1,15 @@
 <template lang="html">
     <nav>
         <div>
+
             <div class="logo-container">
                 <img src="@/assets/menu/logo.png" alt="logo-icon">
             </div>
-            <div class="home-container">
-                <img src="@/assets/menu/home.png" alt="home-icon">
-            </div>
+            <router-link :to="{ name: 'Home' }">
+                <div class="home-container">
+                    <img src="@/assets/menu/home.png" alt="home-icon">
+                </div>
+            </router-link>
             <div class="cart-container">
                 <img src="@/assets/menu/basket.png" alt="cart-icon">
             </div>
@@ -51,6 +54,15 @@ nav{
             display:flex;
             justify-content: center;
             align-items: center;
+        }
+        &.home-container,
+        &.cart-container,
+        &.search-container,
+        &.download-container{
+            img:hover{
+                -webkit-filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
+                filter: invert(30%) grayscale(100%) brightness(70%) contrast(4);
+            }
         }
 
     }

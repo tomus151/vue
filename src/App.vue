@@ -42,6 +42,9 @@ export default {
 </script>
 
 <style lang="scss">
+body{
+    overflow:hidden;
+}
 *{
     margin: 0;
     padding:0;
@@ -50,8 +53,6 @@ export default {
 #app{
     display:flex;
     justify-content: space-between;
-    overflow:hidden;
-    overflow-x: hidden;
     height:100vh;
     .hamburger-menu-container{
         display:flex;
@@ -59,6 +60,7 @@ export default {
         position:absolute;
         top:30px;
         right:0px;
+        z-index:1;
         .hamburger-menu-wrapper{
             width:50px;
             height:50px;
