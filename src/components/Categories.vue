@@ -7,7 +7,7 @@
                         <div class="product-image-container">
                             <img :src="value.imageUrl" alt="" class="product-image">
                         </div>
-                        <div class="descriptions-container">                       
+                        <div class="descriptions-container">
                             <div class="product-name-container">
                                 <span class="product-name">
                                     {{value.name}}
@@ -32,43 +32,8 @@
 </template>
 
 <script>
-import red_seat from "@/assets/categories/products/red_seat.png";
-import modern_bed from "@/assets/categories/products/modern_bed.png";
-import white_table from "@/assets/categories/products/white_table.png";
-import blue_seat from "@/assets/categories/products/blue_seat.png";
-import dark_seat from "@/assets/categories/products/dark_seat.png";
-const productsFirst=[
-    {
-        imageUrl:red_seat,
-        name:"RED SEAT",
-        description:"Lorem ipsum dolor sit amet",
-        price:"$45"
-    },
-    {
-        imageUrl:white_table,
-        name:"WHITE TABLE",
-        description:"Lorem ipsum dolor sit amet",
-        price:"$350"
-    },
-    {
-        name:"BLUE SEAT",
-        description:"Lorem ipsum dolor sit amet",
-        price:"$35",
-        imageUrl:blue_seat
-    },
-    {
-        imageUrl:modern_bed,
-        name:"MODERN BED",
-        description:"Lorem ipsum dolor sit amet",
-        price:"$120"
-    },
-    {
-        imageUrl:dark_seat,
-        name:"DARK SEAT",
-        description:"Lorem ipsum dolor sit amet",
-        price:"$35"
-    }
-]
+import products from "@/components/products/products.json";
+const productsFirst= products;
 export default {
     name:"Categories",
     data(){
@@ -145,6 +110,25 @@ export default {
                             img{
                                 width:100%;
                                 height:100%;
+                            }
+                        }
+                        .descriptions-container{
+                            .product-name-container{
+                                .product-name{
+                                    color:#000;
+                                    font-size:24px;
+                                }
+                            }
+                            .product-description-container{
+                                .product-description{
+                                    color: #a8a8a8;
+                                }
+                            }
+                            .product-price-box{
+                                .product-price{
+                                    color: #0023ff;
+                                    font-weight:700;
+                                }
                             }
                         }
                     }
