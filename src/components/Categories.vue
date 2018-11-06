@@ -42,9 +42,6 @@ export default {
         }
     },
     methods: {
-        getPic(index) {
-            return '../assets/categories/products/'+this.productsFirst[index].imageUrl;
-        }
     }
 }
 </script>
@@ -79,6 +76,7 @@ export default {
                         .product-box{
                             display:flex;
                             align-items: center;
+                            justify-content: space-around;
                             height:100%;
                             .product-image-container{
                                 max-width:50%;
@@ -94,6 +92,7 @@ export default {
                             height:100%;
                             display:flex;
                             align-items: center;
+                            justify-content: space-around;
                             .product-image-container{
                                 max-width:50%;
                             }
@@ -104,6 +103,8 @@ export default {
                     }
                     list-style: none;
                     .product-box{
+                        height:100%;
+                        width:100%;
                         .product-image-container{
                             max-height:100%;
                             height:100%;
@@ -128,6 +129,16 @@ export default {
                                 .product-price{
                                     color: #0023ff;
                                     font-weight:700;
+                                }
+                            }
+                        }
+                        &.product-box-0,
+                        &.product-box-2,
+                        &.product-box-4{
+                            .product-image-container{
+                                height:70%;
+                                img{
+                                    height:100%;
                                 }
                             }
                         }
