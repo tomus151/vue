@@ -55,6 +55,7 @@ body{
     margin: 0;
     padding:0;
     color:red;
+    box-sizing: border-box;
 }
 #app{
     display:flex;
