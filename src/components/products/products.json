@@ -1,34 +1,34 @@
 [
     {
-        "nr":"1",
+        "id":"1",
         "imageUrl":"https://us.123rf.com/450wm/kvsan/kvsan1610/kvsan161000157/64513758-red-chair-isolated-on-white-background-3d-illustration-.jpg?ver=6",
         "name":"RED SEAT",
         "description":"Lorem ipsum dolor sit amet",
         "price":"$45"
     },
     {
-        "nr":"2",
+        "id":"2",
         "imageUrl":"https://hulsta.uk/fileadmin/_processed_/csm_hulsta_et_1900_129_1344b25163.png",
         "name":"WHITE TABLE",
         "description":"Lorem ipsum dolor sit amet",
         "price":"$350"
     },
     {
-        "nr":"3",
+        "id":"3",
         "name":"BLUE SEAT",
         "description":"Lorem ipsum dolor sit amet",
         "price":"$35",
         "imageUrl":"https://cdn.webshopapp.com/shops/112462/files/214616267/475x600x1/eichholtz-blue-chair-margaux-of-velvet.jpg"
     },
     {
-        "nr":"4",
+        "id":"4",
         "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuKOaGnlZ6E9opBZORZxyZvqn1ZOZyPG7NVZjrHzC6UU8JZLIS",
         "name":"MODERN BED",
         "description":"Lorem ipsum dolor sit amet",
         "price":"$120"
     },
     {
-        "nr":"5",
+        "id":"5",
         "imageUrl":"https://www.ikea.com/gb/en/images/products/sakarias-chair-with-armrests-black-sporda-dark-grey__0620567_pe689669_s4.jpg",
         "name":"DARK SEAT",
         "description":"Lorem ipsum dolor sit amet",

@@ -1,6 +1,7 @@
 <template lang="html">
-    <div>
+    <div class="page">
         404
+        Nie znaleziono poszukiwanej strony
     </div>
 </template>
 

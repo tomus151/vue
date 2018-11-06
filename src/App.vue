@@ -17,6 +17,7 @@
 <script>
 import Nav from '@/components/Nav'
 import Hamburger from '@/components/Hamburger'
+import Fourofour from '@/components/Fourofour'
 let isHamburgerOpen = true
 export default {
     name: 'App',
@@ -27,7 +28,8 @@ export default {
     },
     components:{
         Nav,
-        Hamburger
+        Hamburger,
+        Fourofour
     },
     methods:{
         hideShowMenu: function(){
@@ -46,6 +48,8 @@ export default {
 <style lang="scss">
 .page{
     position:fixed !important;
+    width:93vw;
+    margin-left:7vw;
 }
 @import "css/animate.css";
 body{
