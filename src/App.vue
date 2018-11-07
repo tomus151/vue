@@ -50,6 +50,7 @@ export default {
     position:fixed !important;
     width:93vw;
     margin-left:7vw;
+    background: #f0f0f0;
 }
 @import "css/animate.css";
 body{

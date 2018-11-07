@@ -3,7 +3,7 @@
         <div class="product-row">
             <ul>
                 <li v-for="(value, index) in productsFirst">
-                    <router-link :to="{ name: 'Product', params: {productId:value.id} }">
+                    <router-link :to="{ name: 'Product', params: {productId:index} }">
                         <div class="product-box" :class="'product-box-'+index">
                             <div class="product-image-container">
                                 <img :src="value.imageUrl" alt="" class="product-image">
