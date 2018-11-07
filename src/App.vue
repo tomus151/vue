@@ -2,7 +2,7 @@
 <template>
     <div id="app">
         <Nav/>
-        <transition name="router-anim" enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutDown">
+        <transition name="router-anim" enter-active-class="animated rollIn" leave-active-class="animated rollOut">
         <router-view/>
         </transition>
         <Hamburger :isOpen="open"/>

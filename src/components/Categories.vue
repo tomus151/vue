@@ -3,28 +3,30 @@
         <div class="product-row">
             <ul>
                 <li v-for="(value, index) in productsFirst">
-                    <div class="product-box" :class="'product-box-'+index">
-                        <div class="product-image-container">
-                            <img :src="value.imageUrl" alt="" class="product-image">
+                    <router-link :to="{ name: 'Product', params: {productId:value.id} }">
+                        <div class="product-box" :class="'product-box-'+index">
+                            <div class="product-image-container">
+                                <img :src="value.imageUrl" alt="" class="product-image">
+                            </div>
+                            <div class="descriptions-container">
+                                <div class="product-name-container">
+                                    <span class="product-name">
+                                        {{value.name}}
+                                    </span>
+                                </div>
+                                <div class="product-description-container">
+                                    <span class="product-description">
+                                        {{value.description}}
+                                    </span>
+                                </div>
+                                <div class="product-price-box">
+                                    <span class="product-price">
+                                        {{value.price}}
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="descriptions-container">
-                            <div class="product-name-container">
-                                <span class="product-name">
-                                    {{value.name}}
-                                </span>
-                            </div>
-                            <div class="product-description-container">
-                                <span class="product-description">
-                                    {{value.description}}
-                                </span>
-                            </div>
-                            <div class="product-price-box">
-                                <span class="product-price">
-                                    {{value.price}}
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    </router-link>
                 </li>
             </ul>
         </div>
