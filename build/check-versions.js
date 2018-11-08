@@ -25,6 +25,7 @@ if (shell.which('npm')) {
 }
 
 module.exports = function () {
+    mode:'production'
   const warnings = []
 
   for (let i = 0; i < versionRequirements.length; i++) {

@@ -42,8 +42,6 @@ export default {
         return{
             productsFirst
         }
-    },
-    methods: {
     }
 }
 </script>

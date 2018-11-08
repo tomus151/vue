@@ -53,6 +53,7 @@ export default {
     background: #f0f0f0;
 }
 @import "css/animate.css";
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,700,900&amp;subset=latin-ext");
 body{
     overflow:hidden;
 }
@@ -61,6 +62,7 @@ body{
     padding:0;
     color:red;
     box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
 }
 #app{
     display:flex;
