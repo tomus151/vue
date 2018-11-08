@@ -3,7 +3,7 @@
         <div class="product-box-container">
             <div class="product-left-box">
                 <div class="likes-product-container">
-                    like
+                    <span>like</span>
                     <img src="@/assets/product/heart.png" alt="">
                 </div>
                 <div class="image-product-container">
@@ -102,9 +102,37 @@ export default {
             display:flex;
             flex-direction: column;
             justify-content: center;
+            .likes-product-container{
+                height:15%;
+                padding:40px;
+                display:flex;
+                justify-content: flex-end;
+                align-items: center;
+                span{
+                    margin-right:10px;
+                }
+            }
             .image-product-container{
+                height:70%;
+                padding:10px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    max-width:100%;
+                    max-height:100%;
+                    height:100%;
+                }
             }
             .zoom-product-container{
+                height:15%;
+                padding:10px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    margin:20px;
+                }
             }
         }
         .product-right-box{
@@ -154,16 +182,25 @@ export default {
                 margin-left:-30px;
                 box-shadow: inset 10px 0 10px -3px #ccc;
                 padding-left:30px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
                 ul{
                     display:flex;
+
                     li{
+                        &:first-child{
+                            flex-shrink: 1;
+                        }
                         list-style: none;
+                        height:auto;
+
                         &.container-reccomended-name{
                             transform: rotate(270deg)
                         }
                         .image-product-recomended-container{
-                            width: 50px;
-                            height:50px;
+                            max-width: 150px;
+                            max-height:150px;
                             img{
                                 width:100%;
                             }
